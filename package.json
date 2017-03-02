@@ -1,0 +1,33 @@
+{
+  "name": "react-blog",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Static react blog with markdown files",
+  "author": "Agata Kucharska",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/akucharska/react-blog#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akucharska/react-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akucharska/react-blog/issues"
+  }
+}
