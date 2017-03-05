@@ -4,7 +4,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Lorem ipsum dolor!</h1>
-        <div>Lorem ipsum dolor...</div>
+        <div>Lorem ipsum dolor sit amet...</div>
       </div>
     );
 
