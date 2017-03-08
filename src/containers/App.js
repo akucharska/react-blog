@@ -1,13 +1,11 @@
 import React from 'react';
+import MainPage from 'pages/mainPage';
+
 class App extends React.Component {
   render(){
     return (
-      <div>
-        <h1>Lorem ipsum dolor!</h1>
-        <div>Lorem ipsum dolor sit amet...</div>
-      </div>
+      <MainPage />
     );
-
   }
 }
 
