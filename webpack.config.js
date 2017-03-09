@@ -5,10 +5,10 @@ module.exports = {
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
-    './src/index'
+    path.resolve(__dirname, './src/index')
   ],
   output: {
-    path: './build',
+    path: path.resolve(__dirname, './build'),
     filename: 'index.js'
   },
   devServer: {

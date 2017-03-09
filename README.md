@@ -27,5 +27,4 @@ The page will reload if you make edits.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-Currently it only prepare js files
+Builds the app for production inside the `build` folder
