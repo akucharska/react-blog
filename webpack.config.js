@@ -21,7 +21,8 @@ module.exports = {
       atoms: path.resolve(__dirname, 'src/components/1-atoms/'),
       molecules: path.resolve(__dirname, 'src/components/2-molecules/'),
       organisms: path.resolve(__dirname, 'src/components/3-organisms/'),
-      pages: path.resolve(__dirname, 'src/components/4-pages/')
+      pages: path.resolve(__dirname, 'src/components/4-pages/'),
+      styles: path.resolve(__dirname, 'src/styles/')
     }
   },
   module: {
@@ -32,7 +33,7 @@ module.exports = {
         loaders: ['babel-loader']
       }, {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+        loader: ExtractTextPlugin.extract('css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader')
       }
     ]
   },
