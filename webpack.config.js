@@ -22,7 +22,8 @@ module.exports = {
       molecules: path.resolve(__dirname, 'src/components/2-molecules/'),
       organisms: path.resolve(__dirname, 'src/components/3-organisms/'),
       pages: path.resolve(__dirname, 'src/components/4-pages/'),
-      styles: path.resolve(__dirname, 'src/styles/')
+      styles: path.resolve(__dirname, 'src/styles/'),
+      variables: path.resolve(__dirname, 'src/styles/1-tools/1_variables.scss')
     }
   },
   module: {
@@ -33,7 +34,7 @@ module.exports = {
         loaders: ['babel-loader']
       }, {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader')
+        loader: ExtractTextPlugin.extract('css-loader?modules&importLoaders=1&localIdentName=[local]!sass-loader')
       }
     ]
   },
