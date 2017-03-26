@@ -9,7 +9,7 @@ class Articles extends React.Component {
     return (
       <div>
         <Header />
-        <Article title="Articles"/>
+        <Article title="Artykuły"/>
       </div>
     );
 

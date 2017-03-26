@@ -9,7 +9,7 @@ class MainPage extends React.Component {
     return (
       <div>
         <Header />
-        <Article />
+        <Article title="Tytuł"/>
       </div>
     );
 

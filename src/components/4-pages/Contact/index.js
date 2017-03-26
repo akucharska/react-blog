@@ -9,7 +9,7 @@ class Contact extends React.Component {
     return (
       <div>
         <Header />
-        <Article title="Contact"/>
+        <Article title="Kontakt"/>
       </div>
     );
 
