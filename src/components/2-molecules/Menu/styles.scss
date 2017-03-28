@@ -1,5 +1,4 @@
 .Menu {
-  color          : white;
   list-style-type: none;
   display        : flex;
   flex-flow      : row nowrap;
@@ -10,6 +9,16 @@
     margin: 0;
   }
   &__link {
-    display: inline-block;
+    color          : white;
+    display        : inline-block;
+    padding        : 1rem;
+    text-decoration: none;
+
+    &--active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: red;
+    }
   }
 }

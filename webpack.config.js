@@ -13,6 +13,7 @@ module.exports = {
     filename: 'index.js'
   },
   devServer: {
+    historyApiFallback: true,
     inline: true,
     port: 3000
   },

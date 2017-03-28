@@ -1,4 +1,4 @@
-import React, { PropTypes }  from 'react';
+import React, { PropTypes } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './styles.scss';
 import Link from 'atoms/Link';
@@ -11,8 +11,8 @@ function ContentWrapper({ children, className }) {
   const styleName='ContentWrapper';
   return (
     <div
-      className={className}
       styleName={styleName}
+      className={className}
     >
       { children }
     </div>
@@ -20,4 +20,5 @@ function ContentWrapper({ children, className }) {
 }
 
 ContentWrapper.propTypes = propTypes;
+
 export default CSSModules(ContentWrapper, styles, { allowMultiple: true });

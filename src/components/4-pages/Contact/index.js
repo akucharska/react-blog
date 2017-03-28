@@ -4,15 +4,15 @@ import styles from './styles.scss';
 import Article from 'organisms/Article';
 import Header from 'organisms/Header';
 
-class MainPage extends React.Component {
+class Contact extends React.Component {
   render(){
     return (
       <div>
         <Header />
-        <Article title="Tytuł"/>
+        <Article title="Kontakt"/>
       </div>
     );
 
   }
 }
-export default CSSModules(MainPage, styles, { allowMultiple: true });
+export default CSSModules(Contact, styles, { allowMultiple: true });

@@ -1,7 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
 import styles from './styles.scss';
-import Link from 'atoms/Link';
 
 function Menu() {
   const styleName='Menu';
@@ -10,19 +10,32 @@ function Menu() {
   return (
     <ul styleName={styleName}>
       <li styleName={styleNameItem}>
-        <Link styleName={styleNameLink}>
+        <NavLink
+          exact
+          activeClassName="Menu__link--active"
+          to="/"
+          styleName={styleNameLink}
+        >
           Strona Główna
-        </Link>
+        </NavLink>
       </li>
       <li styleName={styleNameItem}>
-        <Link styleName={styleNameLink}>
+        <NavLink
+          activeClassName="Menu__link--active"
+          to="/articles"
+          styleName={styleNameLink}
+        >
           Artykuły
-        </Link>
+        </NavLink>
       </li>
       <li styleName={styleNameItem}>
-        <Link styleName={styleNameLink}>
+        <NavLink
+          activeClassName="Menu__link--active"
+          to="/contact"
+          styleName={styleNameLink}
+        >
           Kontakt
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );

@@ -4,15 +4,15 @@ import styles from './styles.scss';
 import Article from 'organisms/Article';
 import Header from 'organisms/Header';
 
-class MainPage extends React.Component {
+class Articles extends React.Component {
   render(){
     return (
       <div>
         <Header />
-        <Article title="Tytuł"/>
+        <Article title="Artykuły"/>
       </div>
     );
 
   }
 }
-export default CSSModules(MainPage, styles, { allowMultiple: true });
+export default CSSModules(Articles, styles, { allowMultiple: true });
