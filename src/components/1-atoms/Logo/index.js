@@ -12,4 +12,4 @@ function Logo() {
 }
 
 
-export default CSSModules(Logo, styles);
+export default CSSModules(Logo, styles, { allowMultiple: true });
