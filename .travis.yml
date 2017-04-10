@@ -7,5 +7,6 @@ before_script:
   - npm install -g webpack
 script:
   - npm test
-  - npm run build
+  - npm start
+  # - npm run build
   # - bash ./.travis-deploy.sh
