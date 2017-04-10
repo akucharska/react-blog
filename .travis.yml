@@ -3,6 +3,8 @@ node_js:
   - 6.9.4
 install:
   - npm install
+before_script:
+  - npm install -g webpack
 script:
   - npm test
   - npm run build
