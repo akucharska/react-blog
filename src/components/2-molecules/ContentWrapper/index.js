@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './styles.scss';
-import Link from 'atoms/Link';
 
 const propTypes = {
   className: PropTypes.string
