@@ -19,10 +19,6 @@ module.exports = {
   },
   resolve: {
     alias: {
-      atoms: path.resolve(__dirname, 'src/components/1-atoms/'),
-      molecules: path.resolve(__dirname, 'src/components/2-molecules/'),
-      organisms: path.resolve(__dirname, 'src/components/3-organisms/'),
-      pages: path.resolve(__dirname, 'src/components/4-pages/'),
       styles: path.resolve(__dirname, 'src/styles/'),
       variables: path.resolve(__dirname, 'src/styles/1-tools/1_variables.scss')
     }

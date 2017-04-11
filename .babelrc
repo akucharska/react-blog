@@ -1,4 +1,17 @@
 {
   "presets": ["es2015", "react"],
-  "plugins": ["react-hot-loader/babel"]
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "atoms": "components/1-atoms",
+        "molecules": "components/2-molecules",
+        "organisms": "components/3-organisms",
+        "pages": "components/4-pages",
+        "styles": "styles",
+        "variables": "styles/1-tools/1_variables.scss"
+      }
+    }],
+    "react-hot-loader/babel"
+  ]
 }
